@@ -12,8 +12,8 @@ class First extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
-      home: const NotesView(),
+      theme: ThemeData(brightness: Brightness.dark, fontFamily: 'Poppins'),
+      home: NotesView(),
     );
   }
 }
