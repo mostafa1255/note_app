@@ -10,7 +10,22 @@ class butomSheet extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-          children: [SizedBox(height: 30,), CustomTextField()],
+          children: [
+            SizedBox(
+              height: 30,
+            ),
+            CustomTextField(
+              hinttext: 'Title',
+              maxsize: 1,
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            CustomTextField(
+              hinttext: 'Content',
+              maxsize: 4,
+            ),
+          ],
         ),
       ),
     );
