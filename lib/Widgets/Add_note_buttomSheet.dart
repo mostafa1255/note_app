@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:note_app/Constants.dart';
 import 'package:note_app/Widgets/Custom_textField.dart';
 import 'package:note_app/Widgets/Custom_buttom.dart';
+
 class butomSheet extends StatelessWidget {
   const butomSheet({super.key});
 
@@ -30,7 +31,7 @@ class butomSheet extends StatelessWidget {
               SizedBox(
                 height: 40,
               ),
-              CustomButtom(),
+      CustomButtom(),
               SizedBox(
                 height: 20,
               ),
@@ -41,4 +42,3 @@ class butomSheet extends StatelessWidget {
     );
   }
 }
-

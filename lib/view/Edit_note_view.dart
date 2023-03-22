@@ -8,6 +8,8 @@ class EditView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: EditviewBody(),);
+    return Scaffold(
+      body: EditviewBody(),
+    );
   }
 }
