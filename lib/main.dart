@@ -7,11 +7,9 @@ import 'package:note_app/view/notes_view.dart';
 void main() async {
   await Hive.initFlutter();
 
- await Hive.openBox(knotesbox);
+  await Hive.openBox(knotesbox);
 
   runApp(const First());
-
-  
 }
 
 class First extends StatelessWidget {
