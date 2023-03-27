@@ -27,7 +27,7 @@ class First extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(brightness: Brightness.dark, fontFamily: 'Poppins'),
-        home: NotesView(),
+        home: const NotesView(),
       ),
     );
   }
