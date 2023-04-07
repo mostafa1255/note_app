@@ -14,6 +14,7 @@ class NotesView extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showModalBottomSheet(
+              isScrollControlled: true,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16)),
               context: context,
@@ -21,7 +22,7 @@ class NotesView extends StatelessWidget {
                 return butomSheet();
               });
         },
-        child: Icon(Icons.add),
+        child:const Icon(Icons.add),
       ),
       body: const NotesViewBody(),
     );
