@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:note_app/Widgets/Edit_view_body.dart';
 import 'package:note_app/models/Note_Model.dart';
 import 'package:note_app/view/Edit_note_view.dart';
 
@@ -27,7 +26,7 @@ class NotesItem extends StatelessWidget {
             ListTile(
               title: Text(
                 notes.title,
-                style: TextStyle(fontSize: 32, color: Colors.black),
+                style: const TextStyle(fontSize: 32, color: Colors.black),
               ),
               subtitle: Padding(
                 padding: const EdgeInsets.only(top: 15),
@@ -37,7 +36,9 @@ class NotesItem extends StatelessWidget {
                 ),
               ),
               trailing: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    notes.delete();
+                  },
                   icon: const Icon(
                     Icons.delete,
                     color: Colors.black,
