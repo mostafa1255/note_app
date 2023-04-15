@@ -20,7 +20,9 @@ itemCount: notes.length,
             itemBuilder: (context, index) {
               return Padding(
                 padding: const EdgeInsets.all(4.0),
-                child: const NotesItem(),
+                child:  NotesItem(
+                  notes: notes[index],
+                ),
               );
             });
       },
